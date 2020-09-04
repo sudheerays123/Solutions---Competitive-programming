@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
-#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+using namespace std;#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 typedef long long int ll;
 #define tc ll test;cin >> test;while(test--)
 #define vi vector<ll>
