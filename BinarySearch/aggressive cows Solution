@@ -1,0 +1,26 @@
+Solution to Aggressive Cows : 
+
+1. Let us take a random x which tells that the distance between consecutive cows should atleast be x
+
+   If we CANT place all the k cows in the stalls such that distance between consecutive cows is x ,
+   
+   -- We cant place cows with distance >= x 
+   -- and we ONLY have to see if it is possible for number < x
+   
+   If we CAN place k cows in the stalls such that distance between consecutive cows is x , 
+   
+   -- We can place cows with distance < x but as we have to maximize our answer , there is no point in choosing them
+   -- We may place cows with distance > x 
+   
+2. Do a binary search which searches the ANSWER 
+
+low = 0 , high = 10^9
+
+Check if it is possible to place cows with distance between any two cows atleast mid = (low+high)/2
+
+  -- If we cannot place , then there is no point in searching for values from mid to high , therefore high = mid , do binary search again
+  -- If we can place , then we can simply search for values from mid + 1 to high , therefore make low = mid+1 , do binary search again
+  
+This will make sure we have the maximum answer 
+
+This is binary searching the answer
