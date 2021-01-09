@@ -1,1 +1,1 @@
-All competitive programming codes
+Solutions to good problems in Competitive Programming
